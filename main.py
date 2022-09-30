@@ -14,7 +14,7 @@ class MainProgram(object):
             try:
                 user_input = input("\n____________________\n1. View Inventory\n2. View Category\n3. Add Category\n4. Add Item\n___________________\nEnter your choice 1-4: ")
                 user_input = int(user_input)
-                if user_input in [1, 2, 3, 4, 5]:
+                if user_input in [1, 2, 3, 4]:
                     self.main(user_input)
                 else:
                     print("Please enter a valid option\nTo quit type quit, exit or stop!")
@@ -136,8 +136,6 @@ class MainProgram(object):
             defence = int(input("Enter the defence stats for said item: "))
             quantity = int(input("Enter the quantity of the said item that you own: "))
             self.add_item(category, InventoryItem(name = name, attack = attack, defence = defence, quantity = quantity))
-        else:
-            print(self.data)
         self.menu()
 
 if __name__ == "__main__":
