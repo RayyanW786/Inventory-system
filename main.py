@@ -140,13 +140,4 @@ class MainProgram(object):
 
 if __name__ == "__main__":
     MainProgram()
-
-        
-
-
-
-
-
-
-
-        
+    
